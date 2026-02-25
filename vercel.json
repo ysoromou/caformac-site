@@ -1,0 +1,12 @@
+{
+  "cleanUrls": false,
+  "trailingSlash": false,
+  "rewrites": [
+    { "source": "/methode-fmp", "destination": "/methode-fmp.html" },
+    { "source": "/qui-sommes-nous", "destination": "/qui-sommes-nous.html" },
+    { "source": "/methode.html", "destination": "/methode-fmp.html" },
+    { "source": "/methode", "destination": "/methode-fmp.html" },
+    { "source": "/qui.html", "destination": "/qui-sommes-nous.html" },
+    { "source": "/qui", "destination": "/qui-sommes-nous.html" }
+  ]
+}
