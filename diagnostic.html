@@ -49,7 +49,7 @@
         <a href="fmcg.html" class="nav__link">FMCG</a>
         <a href="finance.html" class="nav__link">Finance &amp; Conformité</a>
         <a href="qui-sommes-nous.html" class="nav__link">Qui sommes-nous</a>
-        <a href="diagnostic.html" class="nav__cta nav__link--active">Diagnostic offert</a>
+        <a href="diagnostic.html" class="nav__cta nav__link--active">diagnostic</a>
       </div>
     </div>
   </nav>
@@ -63,7 +63,8 @@
         <h1>Pré-diagnostic opérationnel CAFORMAC</h1>
         <p>En 30 minutes, nous clarifions votre situation, identifions vos écarts terrain prioritaires et vous orientons vers le bon niveau d'intervention.</p>
         <div class="diag-hero__ctas">
-          <a href="#form-diagnostic"
+          <a href="https://tidycal.com/ysoromou/diagnostic-et-plan-daction-30-minutes"
+          target="_blank" rel="noopener"
              class="btn--white cta-diagnostic"
              onclick="window.dataLayer=window.dataLayer||[];window.dataLayer.push({event:'diagnostic_click',page_path:window.location.pathname});">
             Demander mon pré-diagnostic offert
@@ -110,7 +111,8 @@
               <p style="font-size:12px; color:var(--text); opacity:.5; margin-top:16px; font-style:italic; border-top:1px solid var(--gray-200); padding-top:12px;">Ce pré-diagnostic n'inclut pas d'immersion terrain ni de rapport complet.</p>
             </div>
             <div class="diag-card__footer">
-              <a href="#form-diagnostic" class="btn btn--primary cta-diagnostic" style="display:block; text-align:center;"
+              <a href="https://tidycal.com/ysoromou/diagnostic-et-plan-daction-30-minutes"
+target="_blank" rel="noopener"" class="btn btn--primary cta-diagnostic" style="display:block; text-align:center;"
                  onclick="window.dataLayer=window.dataLayer||[];window.dataLayer.push({event:'diagnostic_click',page_path:window.location.pathname});">
                 Demander mon pré-diagnostic offert
               </a>
@@ -216,60 +218,32 @@
       </div>
     </section>
 
-    <!-- ======== 6. CTA FINAL + FORMULAIRE ======== -->
-    <section class="diag-cta-final reveal" id="form-diagnostic">
-      <div class="container">
-        <h2>Démarrez par un pré-diagnostic</h2>
-        <p>30 minutes. Gratuit. Sans engagement. Nous qualifions votre situation et vous orientons vers le bon niveau d'intervention.</p>
+    
+   <!-- ======== 6. CTA FINAL ======== -->
+<section class="diag-cta-final reveal" id="form-diagnostic">
+  <div class="container">
+    <h2>Démarrez par un pré-diagnostic</h2>
+    <p>30 minutes. Gratuit. Sans engagement. Nous clarifions votre situation et vous orientons vers le bon niveau d’intervention.</p>
 
-        <div class="diag-cta-final__buttons" style="margin-bottom:48px;">
-          <a href="https://tidycal.com/ysoromou/diagnostic-et-plan-daction-30-minutes"
-             class="btn btn--secondary cta-diagnostic"
-             target="_blank" rel="noopener"
-             style="background:var(--gray-100); color:var(--text); border:none;"
-             onclick="window.dataLayer=window.dataLayer||[];window.dataLayer.push({event:'diagnostic_click',page_path:window.location.pathname});">
-            Planifier un échange de 30 min
-          </a>
-        </div>
+    <div class="form-card" style="max-width: 680px; margin: 0 auto; text-align:center;">
+      <p class="form-note" style="margin-bottom:20px;">
+        Merci d’utiliser votre adresse email professionnelle si possible.
+      </p>
 
-        <!-- Formulaire pré-diagnostic -->
-        <div class="form-card" style="max-width: 680px; margin: 0 auto;">
-          <form action="https://formspree.io/f/xvgzvjba" method="POST">
-            <div class="form-grid">
-              <div class="form-group">
-                <label for="name">Nom complet</label>
-                <input type="text" id="name" name="name" placeholder="Koné Patrick" required>
-              </div>
-              <div class="form-group">
-                <label for="company">Entreprise</label>
-                <input type="text" id="company" name="company" placeholder="Votre société SA" required>
-              </div>
-              <div class="form-group">
-                <label for="position">Fonction</label>
-                <select id="position" name="position" required>
-                  <option value="" disabled selected>Sélectionnez votre fonction</option>
-                  <option value="DG">DG</option>
-                  <option value="DRH">DRH</option>
-                  <option value="Responsable formation">Responsable formation</option>
-                  <option value="Autre">Autre</option>
-                </select>
-              </div>
-              <div class="form-group">
-                <label for="phone">Téléphone</label>
-                <input type="tel" id="phone" name="phone" placeholder="+225 00 00 00 00 00" required>
-              </div>
-              <div class="form-group full-width">
-                <label for="email">Email professionnel</label>
-                <input type="email" id="email" name="email" placeholder="nom@entreprise.com" required>
-              </div>
-            </div>
-            <button type="submit" class="btn btn--primary btn--full">Demander mon pré-diagnostic offert →</button>
-          </form>
-          <p class="form-note">Réponse sous 24h ouvrées. Confidentialité garantie. Sans engagement.</p>
-        </div>
+      <a href="https://tidycal.com/ysoromou/diagnostic-et-plan-daction-30-minutes"
+         class="btn btn--primary cta-diagnostic"
+         target="_blank" rel="noopener"
+         onclick="window.dataLayer=window.dataLayer||[];window.dataLayer.push({event:'diagnostic_click',page_path:window.location.pathname});">
+        Planifier mon pré-diagnostic offert
+      </a>
 
-      </div>
-    </section>
+      <p class="form-note" style="margin-top:16px;">
+        Appel de 30 minutes. Sans engagement.
+      </p>
+    </div>
+  </div>
+</section>
+  
 
   </main>
 
