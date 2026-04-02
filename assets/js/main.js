@@ -146,4 +146,54 @@
     });
   }
 
+  /* --- Nav Dropdown (Secteurs) --- */
+  var dropdownToggle = document.querySelector('.nav__dropdown-toggle');
+  var dropdownMenu = document.querySelector('.nav__dropdown-menu');
+
+  if (dropdownToggle && dropdownMenu) {
+    dropdownToggle.addEventListener('click', function (e) {
+      e.stopPropagation();
+      var isOpen = dropdownMenu.classList.contains('open');
+      dropdownMenu.classList.toggle('open');
+      dropdownToggle.classList.toggle('active');
+      dropdownToggle.setAttribute('aria-expanded', String(!isOpen));
+    });
+
+    // Fermeture au clic extérieur
+    document.addEventListener('click', function () {
+      dropdownMenu.classList.remove('open');
+      dropdownToggle.classList.remove('active');
+      dropdownToggle.setAttribute('aria-expanded', 'false');
+    });
+
+    // Empêche la fermeture au clic sur le menu lui-même
+    dropdownMenu.addEventListener('click', function (e) { e.stopPropagation(); });
+
+    // Fermeture au clic sur un lien du dropdown (mobile nav)
+    dropdownMenu.querySelectorAll('a').forEach(function (link) {
+      link.addEventListener('click', function () {
+        dropdownMenu.classList.remove('open');
+        dropdownToggle.classList.remove('active');
+        dropdownToggle.setAttribute('aria-expanded', 'false');
+        if (navLinks) {
+          hamburger && hamburger.classList.remove('active');
+          navLinks.classList.remove('open');
+          hamburger && hamburger.setAttribute('aria-expanded', 'false');
+          document.body.style.overflow = '';
+        }
+      });
+    });
+  }
+
+  /* --- GTM diagnostic_click tracking --- */
+  window.dataLayer = window.dataLayer || [];
+  document.querySelectorAll('.cta-diagnostic').forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      window.dataLayer.push({
+        event: 'diagnostic_click',
+        page_path: window.location.pathname
+      });
+    });
+  });
+
 })();

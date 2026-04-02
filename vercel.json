@@ -7,6 +7,9 @@
     { "source": "/methode.html", "destination": "/methode-fmp.html" },
     { "source": "/methode", "destination": "/methode-fmp.html" },
     { "source": "/qui.html", "destination": "/qui-sommes-nous.html" },
-    { "source": "/qui", "destination": "/qui-sommes-nous.html" }
+    { "source": "/qui", "destination": "/qui-sommes-nous.html" },
+    { "source": "/hotellerie", "destination": "/hotellerie.html" },
+    { "source": "/fmcg", "destination": "/fmcg.html" },
+    { "source": "/finance", "destination": "/finance.html" }
   ]
 }
